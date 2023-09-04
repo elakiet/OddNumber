@@ -8,19 +8,21 @@ public class Main {
 
 
     }
-    static int PrintOdd(int input){
-        if(input==1) {
+
+    static int PrintOdd(int input) {
+        if (input == 1) {
             System.out.println(input);
             return 0;
         }
 
-        if(input%2!=0){
+        if (input % 2 != 0) {
             System.out.println(input);
-            PrintOdd(input-2);
+            PrintOdd(input - 2);
         }
 
-        if(input%2==0) {
-            PrintOdd(input-1);
+        if (input % 2 == 0) {
+            PrintOdd(input - 1);
         }
         return 1;
     }
+}
